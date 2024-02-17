@@ -1,4 +1,4 @@
-name: osmnx_env
+name: osmnx_env_linux
 channels:
   - conda-forge
   - defaults
