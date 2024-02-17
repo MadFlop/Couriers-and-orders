@@ -1,10 +1,15 @@
 import osmnx as ox
 import matplotlib.pyplot as plt
-import folium
 import csv
+import os
 
 # Получаем граф OpenStreetMap в заданной области
 G = ox.graph_from_place("Yakutsk", network_type="drive", simplify=True)
+
+# Создаем папку maps
+map_folder = "maps/"
+if not os.path.exists(map_folder):
+    os.makedirs(map_folder)
 
 
 class Courier:
